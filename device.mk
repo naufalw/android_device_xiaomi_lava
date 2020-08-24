@@ -22,6 +22,10 @@ $(call inherit-product, device/xiaomi/mt6768-common/mt6768-common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/lava/lava-vendor.mk)
 
+# Camera
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
